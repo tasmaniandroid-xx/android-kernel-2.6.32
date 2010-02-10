@@ -1128,7 +1128,7 @@ static int sholes_wl1271_disable(void)
 
 static struct wl127x_rfkill_platform_data sholes_wl1271_pdata = {
 	.bt_nshutdown_gpio = SHOLES_WL1271_NSHUTDOWN_GPIO,
-	.fm_enable_gpio = -1,
+	.fm_enable_gpio = 1,
 	.bt_hw_init = sholes_wl1271_init,
 	.bt_hw_release = sholes_wl1271_release,
 	.bt_hw_enable = sholes_wl1271_enable,
